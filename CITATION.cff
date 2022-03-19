@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Haghshenas
+    given-names: Abbas
+    orcid: 0000-0001-8193-8962
+title: "Visual Grain Analyzer"
+version: 1.0.1
+doi: 10.5281/zenodo.6369128
+date-released: 2022-03-18
