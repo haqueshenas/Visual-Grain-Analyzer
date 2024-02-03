@@ -1,23 +1,24 @@
-# Visual-Grain-Analyzer
-Visual Grain Analyzer (version 1.0)
+# Visual Grain Analyzer (VGA)
+## Version 1.0
 
-(For more detailed information, please see the PDF version of README)
 
 Visual Grain Analyzer (VGA) is a user-friendly ImageJ macro, which has utilized ImageJ/or Fiji facilities to provide a simple tool for grain analysis, seed technology, and phenomics studies. 
 This macro:
 
-A)	Simulates the processing and calculations reported in the manuscript:
+**A)**	Simulates the processing and calculations reported in the manuscript:
     Haghshenas, A., Emam, Y., & Jafarizadeh, S. (2021). Wheat grain width: A clue for re-exploring visual indicators of grain weight. bioRxiv, 2021.2010.2013.464205.
       https://doi.org/10.1101/2021.10.13.464205
     
    In particular, as reported in the paper, VGA provides various estimations of wheat grain weight, based on the image-derived indices.
 
 
-B)	Also, VGA might be used for other phenotyping purposes such as size & shape analyses of grains of other species, leaf area measurement, etc.
+**B)**	Also, VGA might be used for other phenotyping purposes such as size & shape analyses of grains of other species, leaf area measurement, etc.
 
+----
 
+## **How to run?**
 
-How to run?
+**Important**:  Choosing higher values of "Resolution Enhancement Factor" could increase the processing time considerably, and also make large output images. Thus, it is highly recommendable that if the input images have high quality, set the enhancement factor to 1 (by default, and only for processing the sample images published with the VGA, it has been set to 10). Besides, this quality enhancement approach cannot be an alternative for acquisition of high-quality images.  
 
 For running this user-friendly macro, no scriptwriting or image processing skills are required. Just follow the below steps to process your own images, and extract the quantitative information:
 
@@ -26,15 +27,17 @@ For running this user-friendly macro, no scriptwriting or image processing skill
 3)	Open the VGA.ijm macro in the Fiji. For this, you can either drag & drop the file into the Fiji head, or follow: File> Open.
 4)	In the macro editor, click “Run” (if the Run button is hidden, you can follow Run> Run from the top bar). 
 5)	Follow the successive pop-up dialog windows of the macro, to initiate the processing. After clicking Ok in the last window, status of processing will be displayed on the Log window. Please wait for the message: “Processing completed successfully”.
-6)	Find the results in the output folder (you have determined the output path previously in the respective pop-up window).
+6)	Find the results in the output folder (you have determined the output path previously in the respective pop-up window).  
 
+**Note:**  
+If you wisht to add the VGA to the Fiji and use it as a pluging, rename the VGA.ijm file to VGA_.ijm. Then copy it to /Fiji.app/plugins directory, and restart Fiji.  
 
-Inputs
+**Inputs**
 
 •	RGB images
 
 
-Outputs
+**Outputs**
 
 •	Single .csv files: include the quantitative results extracted from the individual images
 
@@ -42,14 +45,12 @@ Outputs
 
 •	Drawings: various types of drawings represent the visual output of image processing, including segmentation, ellipse fitting, etc.
 
-•	Log: general information about processing and settings are saved in this file.
+•	Log: general information about processing and settings are saved in this file.   
 
 
+**For more detailed information, please see the PDF version of README.**   
 
-
-
-
-
+----
 Copyright
 
 MIT license
